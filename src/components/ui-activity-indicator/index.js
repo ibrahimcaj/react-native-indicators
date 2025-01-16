@@ -59,10 +59,9 @@ export default class UIActivityIndicator extends PureComponent {
       opacity: progress
         .interpolate({ inputRange, outputRange }),
     };
-            <Animated.View key={index} style={[styles.layer, layerStyle]}>
 
     return (
-      <Animated.View style={[styles.layer, layerStyle]} {...{ key: index }}>
+      <Animated.View key={index} style={[styles.layer, layerStyle]}>
         <Animated.View style={barStyle} />
       </Animated.View>
     );
